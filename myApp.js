@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 // middleware
-app.use('/public', __dirname + '/public');
+app.use(__dirname + '/public');
 
 app.get('/', function(req, res) {
   //   res.send('Hello Express');
